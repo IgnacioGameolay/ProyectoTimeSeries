@@ -1,0 +1,57 @@
+# --- Entornos Virtuales (CRÍTICO) ---
+# Nunca subas las librerías instaladas; cada máquina las instala con requirements.txt
+venv/
+.venv/
+env/
+ENV/
+bin/
+lib/
+share/
+
+# --- Python & Cache ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# --- Jupyter Notebooks ---
+# Archivos temporales de ejecución de celdas
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# --- Configuración de Editores (VS Code) ---
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# --- Datos y Modelos (Pesados) ---
+# Evita subir datasets gigantes o pesos de redes neuronales a Git
+# Es mejor usar DVC o almacenamiento externo para estos
+*.csv
+*.h5
+*.keras
+*.tflite
+*.pkl
+*.npy
+*.npz
+
+# --- Logs y Sistema ---
+*.log
+.DS_Store
+Thumbs.db
